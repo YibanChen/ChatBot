@@ -1,0 +1,71 @@
+.matrix-bot{
+    /* width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden; */
+}
+.matrix-bot__messages{
+    height: calc(100vh - 90px);
+    background-color: #131415;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    overflow-y: scroll;
+}
+.matrix-bot__messages::-webkit-scrollbar{
+    width: 10px;
+    background-color: #252c33;
+}
+.matrix-bot__messages::-webkit-scrollbar-thumb{
+    background-color: #384f66;
+    border-radius: 6px;
+}
+.matrix-bot__message{
+    width: 400px;
+    padding: 10px;
+    background-color: #fff;
+    margin-bottom: 10px;
+    border-radius: 15px;
+
+}
+.matrix-bot__message p:first-child{
+   font-weight: 700;
+   font-size: 22px;
+   border-bottom: 1px solid black;
+   display: inline-block;
+   margin: 0;
+}
+.matrix-bot__message p:last-child{
+    font-weight: 400;
+    font-size: 20px;
+    overflow: hidden;
+    word-break: break-word;
+ }
+.matrix-bot__message.matrix-bot__messages--User{
+    align-self: end;
+}
+.matrix-bot__events{
+    height: 50px;
+    display: flex;
+}
+.matrix-bot__events input{
+   flex-grow: 2;
+   padding: 0 10px;
+   outline: none;
+   background-color: #252c33;
+   color:#fff;
+}
+.matrix-bot__events input::placeholder{
+    color:#fff;
+ }
+.matrix-bot__events button{
+    max-width: 90px;
+    width: 100%;
+    border: none;
+    background: none;
+    background-color: #69ab43;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    color:#fff;
+ }
